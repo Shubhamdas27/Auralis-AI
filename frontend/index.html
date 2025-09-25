@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auralis AI - Premium Bot Automation</title>
+    <script type="text/javascript">
+      !(function () {
+        if (!window.UnicornStudio) {
+          window.UnicornStudio = { isInitialized: !1 };
+          var i = document.createElement("script");
+          (i.src =
+            "https://cdn.jsdelivr.net/gh/hiunicornstudio.js@v1.4.25/dist/unicornStudio.umd.js"),
+            (i.onload = function () {
+              window.UnicornStudio.isInitialized ||
+                (UnicornStudio.init(),
+                (window.UnicornStudio.isInitialized = !0));
+            }),
+            (document.head || document.body).appendChild(i);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
